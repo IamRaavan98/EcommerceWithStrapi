@@ -1,0 +1,85 @@
+$small: 300px;
+$medium: 900px;
+$large: 1200px;
+$extraLarge: 1280px;
+
+.card{         
+
+    width: 15vw;
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom: 50px;
+     @media screen and (max-width: $extraLarge) {
+        width: 250px;
+    }
+    .image{    
+
+
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+
+    @media screen and (max-width: $extraLarge) {
+        width: 250px;
+    }
+
+        &:hover{         
+
+            .mainSecondImage{         
+
+                z-index: -1;
+            }
+        }
+
+
+        img{         
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
+    .mainSecondImage {         
+
+        z-index:1;
+    }
+    span{         
+
+        position:absolute;
+        color: #fff;
+        background-color: teal;
+        z-index: 2;
+
+
+    }
+    h2{         
+
+        font-size: 16px;
+        font-weight: 500;
+
+      
+    }
+    
+    .prices{         
+
+        display: flex;
+        gap:20px;
+        margin-top: -20px;
+        
+
+        h3{         
+
+            font-size: 15px;
+            font-weight: 500;
+            &:first-child{         
+
+                color: grey;
+                text-decoration: line;
+            }
+        }
+    }
+
+}

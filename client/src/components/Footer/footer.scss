@@ -1,0 +1,66 @@
+$extraSmall: 300px;
+$small: 600px;
+$medium: 900px;
+$large: 1200px;
+
+.footer {
+  // 
+  height:100%;
+  .top {
+    position:relative;
+    height: 20vh;
+//  width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    @media screen and (max-width: $small){
+      height: 100%;
+      flex-direction: column;
+      
+    }
+    .categories {
+    height: 20vh;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+     
+      @media screen and (max-width: $small){
+      height: min-content;
+      
+    }
+    }
+    
+    .Links {
+      
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .About {
+      
+      .item {
+        
+        width: 25vw;
+      
+      }
+    }
+    .Contact {
+      
+      .item {
+        
+        width: 25vw;
+
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small){
+  .item{
+    display: none;
+  }
+  
+}
