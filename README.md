@@ -2,9 +2,8 @@
 ## 
 ### By making this project i learnt lot about Strapi and Redux-tool-kit.
 
-### It took me Around **15hrs** to complete it.
+### It took me Around **5-6 days** to complete it.
                                       
-## **[Here Deployed Link of Project](https://pensil-home-page-responsive-acbf13.netlify.app/)**
 
 ### Here **Screen-shots** of my projects
 
